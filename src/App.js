@@ -1,6 +1,8 @@
 import { useState } from "react"
 // Import the data
 import data from "./assets/utils"
+// Import components
+import Viz from "./components/Viz"
 // Import the styles
 import "./App.css"
 
@@ -11,7 +13,11 @@ function App() {
 
   console.log(currentDashboard)
 
-  return <div className="App"></div>
+  return (
+    <div className="App">
+      <Viz currentDashboard={currentDashboard} />
+    </div>
+  )
 }
 
 export default App
