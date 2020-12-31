@@ -26,7 +26,13 @@ function App() {
         setCurrentDashboard={setCurrentDashboard}
       />
       <Viz currentDashboard={currentDashboard} />
-      <FontAwesomeIcon className="bars" icon={faBars} />
+      <FontAwesomeIcon
+        className="bars"
+        icon={faBars}
+        onClick={() => {
+          setListStatus(!listStatus)
+        }}
+      />
     </div>
   )
 }
