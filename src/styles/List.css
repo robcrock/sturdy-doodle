@@ -24,40 +24,6 @@
   padding: 1rem;
 }
 
-.list-dashboard {
-  display: flex;
-  align-items: top;
-  padding: 0.75rem;
-  cursor: pointer;
-}
-
-.list-dashboard:hover {
-  background-color: #fafafaff;
-}
-
-.list-dashboard img {
-  width: 35%;
-}
-
-.dashboard-description {
-  padding-left: 1rem;
-  text-transform: uppercase;
-}
-
-.dashboard-description h3 {
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-
-.dashboard-description h4 {
-  font-size: 0.7rem;
-}
-
-.selected {
-  background-color: #eeef;
-}
-
 *::-webkit-scrollbar {
   width: 5px;
 }
