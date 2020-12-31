@@ -18,7 +18,13 @@ function App() {
 
   return (
     <div className="App">
-      <List listStatus={listStatus} setListStatus={setListStatus} />
+      <List
+        listStatus={listStatus}
+        setListStatus={setListStatus}
+        dashboards={dashboards}
+        setDashboards={setDashboards}
+        setCurrentDashboard={setCurrentDashboard}
+      />
       <Viz currentDashboard={currentDashboard} />
       <FontAwesomeIcon className="bars" icon={faBars} />
     </div>
