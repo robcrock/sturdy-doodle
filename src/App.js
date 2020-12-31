@@ -3,6 +3,9 @@ import { useState } from "react"
 import data from "./assets/utils"
 // Import components
 import Viz from "./components/Viz"
+// Import FontAwesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
 // Import the styles
 import "./App.css"
 
@@ -11,11 +14,10 @@ function App() {
   const [dashboards, setDashboards] = useState(data())
   const [currentDashboard, setCurrentDashboard] = useState(dashboards[0])
 
-  console.log(currentDashboard)
-
   return (
     <div className="App">
       <Viz currentDashboard={currentDashboard} />
+      <FontAwesomeIcon className="bars" icon={faBars} />
     </div>
   )
 }
